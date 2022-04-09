@@ -74,7 +74,7 @@ export default function Home() {
               <h1 className='text-white text-xl md:text-2xl font-bold mb-2'>Thank You!</h1>
 
               <p className='text-med-gray'>We appreciate you taking the time to give a rating.
-                If you everd need more support, don't hesitate to get in touch!
+                If you everd need more support, don&apos;t hesitate to get in touch!
               </p>
             </div>
 
