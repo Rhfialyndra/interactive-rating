@@ -41,9 +41,9 @@ export default function Home() {
           </div>
 
           <div className='flex flex-row justify-between w-full text-med-gray '>
-          {stars.map( star => {
+          {stars.map( (star, index) => {
               return (
-                <button onClick={ () => setRated(star)} className={`flex justify-center items-center score w-10 h-10 md:w-12 md:h-12 rounded-full 
+                <button key={index} onClick={ () => setRated(star)} className={`flex justify-center items-center score w-10 h-10 md:w-12 md:h-12 rounded-full 
                 hover:text-white ${rate === star ? "bg-orange text-white" :  "bg-dark-blue hover:bg-med-gray"} transition-all duration-100`}>
               {star}
             </button>
@@ -68,7 +68,7 @@ export default function Home() {
             alt={"thank you"}
             />
 
-            <p className='px-4 py-2 bg-dark-blue rounded-full text-xs md:text-md text-orange'>{`You selected ${rate} out of 5`}</p>
+            <p className="px-4 py-2 bg-dark-blue rounded-full text-xs md:text-md text-orange">{`You selected ${rate} out of 5`}</p>
             
             <div className="flex flex-col items-center">
               <h1 className='text-white text-xl md:text-2xl font-bold mb-2'>Thank You!</h1>
