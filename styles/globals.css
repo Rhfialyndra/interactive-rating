@@ -1,16 +1,83 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family : 'Overpass', sans-serif;
+  background-color : hsl(216, 12%, 8%);
+  
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.modal {
+
+  background-color : hsl(213, 19%, 18%);
+
 }
 
-* {
-  box-sizing: border-box;
+
+@layer components {
+  
+
+  .bg-dark-blue {
+
+
+    background-color : hsl(216, 12%, 12%);
+
+  }
+
+  .bg-orange {
+
+    background-color : hsl(25, 97%, 53%);
+
+
+  }
+
+  .text-orange {
+    
+    color :hsl(25, 97%, 53%);  
+  
+  }
+
+  .bg-med-gray {
+
+    background-color : hsl(216, 12%, 54%);
+
+
+  }
+
+  .text-med-gray {
+
+
+    color : hsl(216, 12%, 54%);
+
+
+  }
+
+
+  .flip-card {
+
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform : rotateY(180deg);
+
+
+  }
+
+  .backface-hidden {
+
+    backface-visibility : hidden;
+
+  }
+
 }
+
+
+
+
+
+  
